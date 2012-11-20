@@ -11,3 +11,4 @@ media
 settings.py
 sport/sport/settings.py
 *.pyc
+settings.*
