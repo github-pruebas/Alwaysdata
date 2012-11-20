@@ -1,0 +1,9 @@
+.bash_history
+.env.php5
+.env.python
+.env.ruby
+.ipython/
+.viminfo/
+admin/
+cgi-bin/
+media

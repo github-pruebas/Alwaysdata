@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sandbox en alwaysdata</title>
+    <link href="http://static.alwaysdata.com/v3/images/favicon.ico" rel="shortcut icon" />
+    <script type="text/javascript" src="js/saludo.js"></script>
+ 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36404909-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+    </script>
+
+</head>
+
+<TITLE>A simple frameset document</TITLE>
+</HEAD>
+<FRAMESET cols="25%, 75%">
+  <FRAMESET rows="200, 300">
+      <FRAME src="frame_col_up.html" noresize>
+      <FRAME src="frame_col_down.html" noresize>
+  </FRAMESET>
+  <FRAME src="frame_ppal.html" noresize>
+  <NOFRAMES>
+      <P>Los frames de esta página contienen:
+      <UL>
+         <LI><A href="frame_ppal.html">Contenido principal</A>
+         <LI><A href="frame_col_up.html">Contenido en columna, arriba</A>
+         <LI><A href="frame_col_down.html">Contenido en columna, abajo</A>
+      </UL>
+  </NOFRAMES>
+</FRAMESET>
+
+</html>
