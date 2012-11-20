@@ -14,7 +14,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'asalas_bd',                      # Or path to database file if using sqlite3.
         'USER': 'asalas',                      # Not used with sqlite3.
-        'PASSWORD': 'gggggggggggggg',                  # Not used with sqlite3.
+        'PASSWORD': 'hhhhhhhhhhhh',                  # Not used with sqlite3.
         'HOST': 'mysql2.alwaysdata.com',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
