@@ -8,4 +8,4 @@ admin/
 cgi-bin/
 media
 .viminfo
-.settings.py
+settings.py
