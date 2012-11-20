@@ -67,7 +67,7 @@
 	n
 
 # File marks:
-'0  17  33  ~/sport/sport/settings.py
+'0  17  34  ~/sport/sport/settings.py
 '1  41  4  ~/www/frame_ppal.html
 '2  32  46  ~/www/frame_col_up.html
 '3  40  13  ~/www/frame_ppal.html
@@ -79,7 +79,7 @@
 '9  1  0  ~/www/frame_col_down.html
 
 # Jumplist (newest first):
--'  17  33  ~/sport/sport/settings.py
+-'  17  34  ~/sport/sport/settings.py
 -'  1  0  ~/sport/sport/settings.py
 -'  41  4  ~/www/frame_ppal.html
 -'  1  0  ~/www/frame_ppal.html
@@ -177,14 +177,13 @@
 -'  3  0  ~/deporte/deporteapp/models.py
 -'  1  0  ~/deporte/deporteapp/models.py
 -'  15  26  ~/deporte/deporte/settings.py
--'  4  40  ~/deporte/deporte/public/.htaccess
 
 # History of marks within files (newest to oldest):
 
 > ~/sport/sport/settings.py
-	"	17	33
-	^	17	34
-	.	17	33
+	"	17	34
+	^	17	35
+	.	17	34
 	+	14	42
 	+	18	17
 	+	19	20
@@ -211,7 +210,7 @@
 	+	48	14
 	+	53	13
 	+	123	17
-	+	17	33
+	+	17	34
 	i	14	38
 
 > ~/www/frame_ppal.html
