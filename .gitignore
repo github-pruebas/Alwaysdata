@@ -10,3 +10,4 @@ media
 .viminfo
 settings.py
 sport/sport/settings.py
+*.pyc
