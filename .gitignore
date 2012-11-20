@@ -9,6 +9,4 @@ cgi-bin/
 media
 .viminfo
 settings.py
-sport/sport/settings.py
 *.pyc
-settings.*

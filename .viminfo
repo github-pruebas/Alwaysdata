@@ -45,42 +45,43 @@
 "0	LINE	0
 	    <br>
 	    <br>
-"1	LINE	0
-	    A ver hasta dónde llegan los 10Mb !! 
+""1	LINE	0
+	sport/sport/settings.py
 "2	LINE	0
-	    <br>
+	settings.*
 "3	LINE	0
-	    <br>
+	    A ver hasta dónde llegan los 10Mb !! 
 "4	LINE	0
 	    <br>
 "5	LINE	0
-	rt
+	    <br>
 "6	LINE	0
-	</html>
+	    <br>
 "7	LINE	0
-	
+	rt
 "8	LINE	0
-	</body>
+	</html>
 "9	LINE	0
-	    - Hasta desarrollar, admin Django <br>
-""-	CHAR	0
+	
+"-	CHAR	0
 	.
 
 # File marks:
-'0  11  0  ~/.gitignore
-'1  17  34  ~/sport/sport/settings.py
-'2  1  0  ~/sport/sport/.gitignore
-'3  41  4  ~/www/frame_ppal.html
-'4  32  46  ~/www/frame_col_up.html
-'5  40  13  ~/www/frame_ppal.html
-'6  10  0  ~/www/index.html
-'7  17  4  ~/sport/sport/urls.py
-'8  7  80  ~/sport/appsport/urls.py
-'9  3  40  ~/sport/apppendiente/models.py
+'0  12  0  ~/.gitignore
+'1  11  0  ~/.gitignore
+'2  17  34  ~/sport/sport/settings.py
+'3  1  0  ~/sport/sport/.gitignore
+'4  41  4  ~/www/frame_ppal.html
+'5  32  46  ~/www/frame_col_up.html
+'6  40  13  ~/www/frame_ppal.html
+'7  10  0  ~/www/index.html
+'8  17  4  ~/sport/sport/urls.py
+'9  7  80  ~/sport/appsport/urls.py
 
 # Jumplist (newest first):
--'  11  0  ~/.gitignore
+-'  12  0  ~/.gitignore
 -'  1  0  ~/.gitignore
+-'  11  0  ~/.gitignore
 -'  17  34  ~/sport/sport/settings.py
 -'  1  0  ~/sport/sport/settings.py
 -'  1  0  ~/sport/sport/.gitignore
@@ -177,15 +178,15 @@
 -'  57  5  ~/deporte/deporte/settings.py
 -'  34  0  ~/deporte/deporte/settings.py
 -'  7  10  ~/deporte/deporteapp/models.py
--'  3  0  ~/deporte/deporteapp/models.py
--'  1  0  ~/deporte/deporteapp/models.py
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	11	0
-	.	11	0
+	"	12	0
+	.	12	0
 	+	11	0
+	+	13	0
+	+	12	0
 
 > ~/sport/sport/settings.py
 	"	17	34
