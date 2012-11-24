@@ -5,4 +5,5 @@ from models import *
 
 def count(request):
     total_pendientes = Pendiente.objects.count()
-    return render_to_response('count.html',{'total_pendientes':total_pendientes},context_instance=RequestContext(request))
+    lista_pend = Pendiente.objects.all()
+    return render_to_response('count.html',{'total_pendientes':total_pendientes,'lista_pend':lista_pend},context_instance=RequestContext(request))

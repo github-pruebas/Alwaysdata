@@ -6,4 +6,13 @@
          <marquee>{{ total_pendientes }} tareas pendientes!</marquee>
       </blink>
     </center>
+
+	<ul>
+	{% for una_tarea in lista_pends %}
+		<li><a href="{{ una_tarea.get_absolute_url }}">{{ una_tarea.tarea }}</a></li>
+	{% empty %}
+		<li>Sin tareas pendientes.</li>
+	{% endfor %}
+	</ul>
+
 {% endblock %}
