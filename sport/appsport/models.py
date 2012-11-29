@@ -1,6 +1,5 @@
-# Create your models here.
-
 from django.db import models
+
 class Sport(models.Model):
     nombre = models.CharField(max_length=100)
     contacto = models.BooleanField(default=False)
