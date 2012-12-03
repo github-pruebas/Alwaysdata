@@ -7,10 +7,53 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+
     <script>
     $(function() {
-        $( "#menu" ).menu();
+        $("#menu").menu();
+
+        // Llamada a código directamente desde el menú
+	$('#api_tastypie_http_post').on('click', function (){
+
+ 	       alert("Insertamos en la tabla de 'Pendientes' llamando con un HTTP POST a la API.");
+
+	       var tmp_tarea_nombre = prompt("Introduzca descripción para tarea:");
+	       if (!tmp_tarea_nombre)
+	       {
+		   alert("Tarea errónea: no puede ser nula. No se ha realizado la inserción.");
+	       }
+	       else
+	       {
+		       var tmp_tarea_prioridad = prompt("Introduzca prioridad para tarea:");
+		       if (isNaN(tmp_tarea_prioridad))  
+		       {
+			   alert("Prioridad errónea: debe estar formada sólo por números. No se ha realizado la inserción.");
+		       }
+		       else
+		       {
+			  if (!tmp_tarea_prioridad)
+			  {
+			     alert("Prioridad errónea: no puede ser nula. No se ha realizado la inserción.");
+			  }
+			  else
+			  {
+
+			       $(function(){
+				$.ajax({
+					type: 'POST',
+					url: 'http://asalas.alwaysdata.net/api/v1/pendiente/',
+					data: JSON.stringify({tarea: tmp_tarea_nombre, prioridad: tmp_tarea_prioridad}),
+			  		contentType: 'application/json',
+					processData:  false,
+				});
+			       });
+
+		             var cadena = "curl --user user_api:pass_api --dump-header --H \"Content-Type: application/json\" -X POST --data '{\"tarea\": " + tmp_tarea_nombre + ", \"prioridad\": " + tmp_tarea_prioridad + "}' http://asalas.alwaysdata.net/api/v1/pendiente/"
+			     alert("Eso sería equivalente a hacer: " + cadena);
+			  }
+		       }
+	      }
+	});
     });
     </script>
     <style>
@@ -38,7 +81,7 @@
     <li><a href="http://asalas.alwaysdata.net/admin" target="_blank"">Admin Django</a></li>
     <li><a href="https://admin.alwaysdata.com/login" target="_blank">Admin Always</a></li>
     <li class="ui-state-disabled"><a href="#">Menú privado</a></li>
-    <li><a href="datos_api_tastypie.html" target="_blank">API Tastypie</a></li>
+    <li><a href="#" id="api_tastypie_http_post">API Tastypie</a></li>
     <li>
         <a href="#">Estadísticas</a>
         <ul>
