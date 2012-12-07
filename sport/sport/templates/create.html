@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Añadir tareas{% endblock %}
+
+{% block content %}
+
+    {% if tarea %}
+        <h1>Editar la tarea "{{ tarea.nombre }}"</h1>
+    {% else %}
+       <h1>Añadir una tarea nueva</h1>
+    {% endif %}
+
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{% if tarea %}Guardar cambios{% else %}Crear tarea{% endif %}"/>
+    </form>
+{% endblock %}
