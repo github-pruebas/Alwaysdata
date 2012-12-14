@@ -14,11 +14,18 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'asalas_bd',                      # Or path to database file if using sqlite3.
         'USER': 'asalas',                      # Not used with sqlite3.
-        'PASSWORD': '-----------',              # Not used with sqlite3.
+        'PASSWORD': '--------',                  # Not used with sqlite3.
         'HOST': 'mysql2.alwaysdata.com',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+ 
+# Para el envio de emails de saludo:
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'pruebasalwaysdata@gmail.com'
+EMAIL_HOST_PASSWORD = '---------'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -121,6 +128,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'appsport',
     'apppendiente',
+    'tastypie',
 )
 
 # A sample logging configuration. The only tangible logging

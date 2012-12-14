@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Iniciar sesión</h1>
+   <form action="{% url django.contrib.auth.views.login %}" method="post">
+      {{ form }}
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}" />
+      <input type="submit" value="Iniciar sesión" />
+   </form>
+{% endblock %}
