@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.signals import post_save
+from django.core.mail import send_mail
 
 class Sport(models.Model):
     nombre = models.CharField(max_length=100)
@@ -21,3 +23,14 @@ class Participante(models.Model):
     
     class Meta:
         ordering = ('id',)
+
+def signal_envia_mail(sender, instance=False, **kwargs):
+    send_mail('Django-Signals: Se ha creado o modificado un registro de participante en el Sandbox en Alwaysdata',
+              'Se ha creado o modificado un registro de participante en el Sandbox en Alwaysdata',
+              'pruebasalwaysdata@gmail.com', 
+              ['asalasl@gmail.com'], 
+              fail_silently=False)
+
+post_save.connect(signal_envia_mail, sender=Participante)
+
+

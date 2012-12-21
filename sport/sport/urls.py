@@ -32,4 +32,12 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
     # Este es mi logout
     url(r'^logout_manual/$', 'apppendiente.views.logout_manual'),
+
+    # -------------------------------------------------------------------------------------------
+    # Vistas genericas: son vistas que ofrece Django. Por ejemplo, con TemplateView podemos
+    # llamar asi directamente a un template, sin tener que generar y llamar a una vista
+    # que lo renderice
+    #(r'^about/', TemplateView.as_view(template_name="about.html")),
+    # -------------------------------------------------------------------------------------------
+
 )

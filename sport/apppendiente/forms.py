@@ -12,8 +12,5 @@ class AltaTareaForm(forms.ModelForm):
 
 # Ojo, este no es un ModelForm, sino un Form
 class EmailSaludoForm(forms.Form):
-    remitente = forms.CharField(label='Tu nombre',required=True,max_length=15)
-    mensaje = forms.CharField(widget=forms.Textarea,required=True,max_length=100)
-
-
-
+    remitente = forms.CharField(label='Tu nombre',required=True,max_length=25)
+    mensaje = forms.CharField(widget=forms.Textarea,required=True,max_length=500)

@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 from models import *
 from forms import *
 
+
 def count(request):
     total_pendientes = Pendiente.objects.count()
     lista_pend = Pendiente.objects.all()
@@ -29,6 +30,9 @@ def tarea_create(request):
     return render_to_response('create.html', locals(), context_instance=RequestContext(request))
 
 
+# En el curso que nos dio A.Melé en QDQ instalamos el smtp server "postfix" para tener el servidor smtp en 
+# nuestro local host, pero como no hay mucho espacio en alwaysdata, voy a usar el smtp de gmail, con el user
+# "pruebasalwaysdata@gmail.com" (ver password en settings)
 def email_saludo(request): 
    if request.method == 'POST': # If the form has been submitted...
         form = EmailSaludoForm(request.POST) # A form linked to the POST data
