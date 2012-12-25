@@ -13,11 +13,10 @@ class Pendiente(models.Model):
         return self.tarea
 
 def signal_mail_save_tarea(sender, instance=False, **kwargs):
-    send_mail('Django-Signals: Se ha creado/modificado una tarea en el Sandbox en Alwaysdata',
-              'Se ha creado/modificado una tarea en el Sandbox en Alwaysdata',
+    send_mail('Django-Signals: Creada/modificada la tarea "' + instance.tarea +'"',
+              'Se ha creado/modificado la tarea "'+ instance.tarea +'" en el Sandbox en Alwaysdata con prioridad '+str(instance.prioridad),
               'pruebasalwaysdata@gmail.com', 
               ['asalasl@gmail.com'], 
               fail_silently=False)
-
+    
 post_save.connect(signal_mail_save_tarea, sender=Pendiente)
-

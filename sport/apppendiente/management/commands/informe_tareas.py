@@ -15,4 +15,3 @@ class Command(NoArgsCommand):
 	          'pruebasalwaysdata@gmail.com', 
 	          ['asalasl@gmail.com'], 
 	          fail_silently=False)
-

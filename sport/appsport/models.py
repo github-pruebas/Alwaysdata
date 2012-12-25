@@ -25,8 +25,8 @@ class Participante(models.Model):
         ordering = ('id',)
 
 def signal_envia_mail(sender, instance=False, **kwargs):
-    send_mail('Django-Signals: Se ha creado o modificado un registro de participante en el Sandbox en Alwaysdata',
-              'Se ha creado o modificado un registro de participante en el Sandbox en Alwaysdata',
+    send_mail('Django-Signals: Creado/modificado el participante "'+instance.tipo+'"',
+              'Se ha creado o modificado un registro de participante en el Sandbox en Alwaysdata, con el nombre de: "'+instance.tipo+'" y cuya tarea es:"'+instance.funcion+'"',
               'pruebasalwaysdata@gmail.com', 
               ['asalasl@gmail.com'], 
               fail_silently=False)
