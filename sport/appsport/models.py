@@ -1,9 +1,11 @@
+# coding: utf-8
 from django.db import models
 from django.db.models.signals import post_save
 from django.core.mail import send_mail
 
 class Sport(models.Model):
-    nombre = models.CharField(max_length=100)
+    # Para crear índices ponemos "db_index=True" en la definición del campo, y luego syncdb
+    nombre = models.CharField(max_length=100, db_index=True)
     contacto = models.BooleanField(default=False)
 
     class Meta:
@@ -14,7 +16,8 @@ class Sport(models.Model):
 
 
 class Participante(models.Model):
-    sport = models.ForeignKey(Sport, related_name= 'sports')
+    # Para crear índices ponemos "db_index=True" en la definición del campo, y luego syncdb
+    sport = models.ForeignKey(Sport, related_name= 'sports', db_index=True)
     tipo = models.CharField(max_length=100)
     funcion = models.TextField(blank=True)
 

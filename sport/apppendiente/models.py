@@ -1,10 +1,12 @@
+# coding: utf-8
 from django.db import models
 from django.db.models.signals import post_save
 from django.core.mail import send_mail
 
 class Pendiente(models.Model):
     tarea = models.CharField(max_length=300)
-    prioridad = models.IntegerField()
+    # Para crear índices ponemos "db_index=True" en la definición del campo, y luego syncdb
+    prioridad = models.IntegerField(db_index=True)
 
     class Meta:
         ordering = ('prioridad',)

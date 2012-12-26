@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/eval PYTHONPATH=/home/asalas/modules python
 import os, sys
 
 _PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
