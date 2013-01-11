@@ -3,6 +3,10 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+# Para anadir al PYTHONPATH podemos incluir estas dos lineas:
+#import sys
+#sys.path.append("/home/asalas/loquesea") 
+
 ADMINS = (
     ('Antonio Salas', 'asalasl@gmail.com'),
 )
@@ -14,7 +18,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'asalas_bd',                      # Or path to database file if using sqlite3.
         'USER': 'asalas',                      # Not used with sqlite3.
-        'PASSWORD': '--------',                  # Not used with sqlite3.
+        'PASSWORD': '-------',                  # Not used with sqlite3.
         'HOST': 'mysql2.alwaysdata.com',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -91,7 +95,7 @@ SECRET_KEY = '4$0wy+!vjesg4-p6gb2k0*)%s#1f7m9h56lkydj-du#xozgg+e'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+    #'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -101,7 +105,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'sport.urls'
@@ -129,7 +134,10 @@ INSTALLED_APPS = (
     'appsport',
     'apppendiente',
     'tastypie',
+    'debug_toolbar',
 )
+
+INTERNAL_IPS = ('127.0.0.1','85.118.242.195','89.131.4.84')
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -159,3 +167,8 @@ LOGGING = {
         },
     }
 }
+
+DEBUG_TOOLBAR_CONFIG = {
+    'INTERCEPT_REDIRECTS': False,
+}
+
