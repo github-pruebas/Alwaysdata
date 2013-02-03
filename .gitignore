@@ -9,4 +9,5 @@ cgi-bin/
 media
 .viminfo
 settings.py
+00_config_bbdd.php
 *.pyc
