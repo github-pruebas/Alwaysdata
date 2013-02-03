@@ -11,6 +11,8 @@ from forms import *
 def count(request):
     total_pendientes = Pendiente.objects.count()
     lista_pend = Pendiente.objects.all()
+    # el return se podría hacer más sencillo con locals(), así, ya que locals carga TODAS las variables locales:
+    # return render_to_response('count.html', locals(), context_instance=RequestContext(request))
     return render_to_response('count.html',{'total_pendientes':total_pendientes,'lista_pend':lista_pend},context_instance=RequestContext(request))
 
 
@@ -51,7 +53,3 @@ def email_saludo(request):
 def logout_manual(request):
     logout(request)
     return render_to_response('logout_manual.html', context_instance=RequestContext(request))
-
-
-
-
