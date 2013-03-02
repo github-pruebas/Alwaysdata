@@ -1,7 +1,52 @@
-.posicionamiento { color: blue ; 
+
+/* "almoadilla" para un solo uso. En el html se identifica el objeto mediante "id" */
+/* "punto" para varios usos. En el html se identifica el objeto mediante "class" */
+
+#cabecera {text-align:center; background-color:#f0f0f0;}
+#menuvertical {background-color:white; width:250px; float:left;}
+#menuvertical p {padding:5px 10px 5px 10px; text-indent:15px;}
+#tareas {background-color:white; width:250px; float:right; font-size: 12px;}
+#tareas p {padding:5px 10px 5px 10px; text-indent:15px;}
+#pie {background-color:#3B3636; }
+#pie p {padding:10px 10px 5px 0px; text-indent:0px; text-align:right; height:70px;}
+.fuente_pie {font-weight:bold; color:white;}	  
+.derecha {display:block; float:right; margin-left:1em}
+.izquierda {background-color:white; display:block; float:left; margin-right:1em}
+.resaltado {font-weight:bold; font-size:22px; color:red;}	  
+
+.posicionamiento { text-align:left;
+               color: blue ; 
 	           background-color:silver ; 
                /* O bien sólo indicamos alguno: margin-top:10px ; margin-bottom:10px; margin-left:10px; margin-right:10px; */
 	           margin-left:200px ; 
+	           margin-right:150px ; 
+	           margin-bottom:20px ; 
+	           /*padding: valorsuperior valorderecho valorinferior valorizquierdo ;*/
+	           padding: 30px 50px 20px 90px ;
+	           border-color:red ; 
+	           border-width:20px ; 
+	           border-style:double ;} 
+
+.parrafouno { font: italic bolder 15px Arial,Verdana,sans-serif ;
+              color:green ; 
+              margin-top:50px ; } 
+
+/* font-family: Arial, Helvetica, sans-serif;  
+   Si el usuario no tiene la priemera que indicamos, probamos con la segunda, y así hasta encontrar una */
+.parrafodos { font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      /* text-align todas la líneas miden lo mismo */
+      text-align: justify;
+      /* text-indent indica que empieze un poco desplazado a la derecha */
+      text-indent: 40px;
+      /*margin: valorsuperior valorderecho valorinferior valorizquierdo ; */
+      margin: 140px 150px 50px 140px ;
+    }  
+
+.parrafotres { color: blue ; 
+	           background-color:silver ; 
+               /* O bien sólo indicamos alguno: margin-top:10px ; margin-bottom:10px; margin-left:10px; margin-right:10px; */
+	           margin-left:400px ; 
 	           margin-right:150px ; 
 	           /*padding: valorsuperior valorderecho valorinferior valorizquierdo ;*/
 	           padding: 30px 50px 20px 90px ;
