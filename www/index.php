@@ -99,12 +99,19 @@
 <body>
 
    <header id="cabecera">
-    <div class="izquierda"><img style="width: 120px; height: 90px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></div>
-    <hgroup> 
-    <h1> Tortuga Tomasa presenta: </h1>
-    <h2>Pruebas hosting <span class="resaltado">Alwaysdata.com</span></h2>
-    </hgroup>
-   </header>
+
+    <div id="cabizq"><img style="width:120px; height:90px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></div>
+    
+    <div id="cabdere">    
+      <div id="cabdere_caida">    
+        <hgroup> 
+        <h1> Tortuga Tomasa presenta: </h1>
+        <h2>Pruebas hosting <span class="resaltado">Alwaysdata.com</span></h2>
+        </hgroup>
+        </div>
+    </div>
+
+ </header>
   
 
    <!-- Menú  vertical -->
@@ -168,13 +175,13 @@
 
           $i = 0;
 
-          $Sql ="select tarea from apppendiente_pendiente order by prioridad";
+          $Sql ="select tarea, id from apppendiente_pendiente order by prioridad";
           $result = mysql_query( $Sql ) or die("No se puede ejecutar la consulta: ".mysql_error());
           
           while($Rs = mysql_fetch_array($result)) 
           {
               $i = $i + 1;
-              echo $i.'.- '.$Rs[0].'<br/><br/>';
+              echo $i.'.- '.$Rs[0].' <a href="http://asalas.alwaysdata.net/admin/apppendiente/pendiente/'.$Rs[1].'" target="_blank" title="Acceso a esta tarea en el admin">Ver</a>'.'<br/><br/>';
           }
       ?> 
    </article>
@@ -225,15 +232,26 @@
         <a href="http://asalas.alwaysdata.net/inicio/caravaning-en-europa.html" target="_blank" title="caravaning en europa">caravaning en europa</a>
   </article> 
 
- 
-
   <footer id="pie">
-    <span class="fuente_pie">Visitas:</span>
-    <!-- Start of Domino Counter Code -->
-    <script type="text/javascript">var dominocounter_a = "always";</script>
-    <script type="text/javascript" src="http://www.dominocounter.net/webcounter.js"></script>
-    <!-- End of Domino Counter Code -->
-    <p><span class="fuente_pie">Powered by:</span> <img style="width: 80px; height: 60px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></p>
+    
+    <div id="pieizq">
+        <div id="centrado_manual">
+            <span class="fuente_pie">Visitas:</span>
+            <!-- Start of Domino Counter Code -->
+            <script type="text/javascript">var dominocounter_a = "always";</script>
+            <script type="text/javascript" src="http://www.dominocounter.net/webcounter.js"></script>
+            <!-- End of Domino Counter Code -->
+        </div>
+    </div>
+    
+    <div id="piedere">    
+        <p><span class="fuente_pie">Powered by:</span> <img style="width: 80px; height: 60px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></p>
+    </div>
+
+    <div id="piebajo">
+       Copyright © Tortuga Tomasa 
+    </div>
+
   </footer> 
 
 
