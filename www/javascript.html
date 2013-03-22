@@ -5,8 +5,8 @@
 <title>Leer info de un documento usando DOM</title>
 
 <script type="text/javascript">
-// Ejecutamos al cargar: (window.onload)
-window.onload = function() {
+// También podría hacerse automáticamente al cargar: (window.onload)
+  function_calcula = function() {
   // "info" referencia al elemento con "id" = "informacion"
   var info = document.getElementById("informacion");
  
@@ -39,6 +39,11 @@ window.onload = function() {
 
 </head>
 <body>
+
+ <br>
+ <button type="button" onclick="function_calcula()">Pulsa!</button>
+ <br><br><br>
+
 <div id="informacion" style="border:thin solid silver; padding:.5em"></div> 
 <p>Lorem ipsum dolor sit amet, <a href="http://prueba">consectetuer adipiscing elit</a>. Sed mattis enim vitae orci. Phasellus libero. 
 Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, 

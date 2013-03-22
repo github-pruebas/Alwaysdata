@@ -27,6 +27,12 @@ urlpatterns = patterns('',
     # Manda un email a mi cuenta asalasl@gmail.com
     url(r'^email_saludo/$', 'apppendiente.views.email_saludo'),
 
+    # Expresiones SEO
+    url(r'^tortuga-tomasa-letra/$', 'apppendiente.views.tortuga_tomasa_letra'),
+    url(r'^tortuga-tomasa-historia/$', 'apppendiente.views.tortuga_tomasa_historia'),
+    url(r'^tortuga-tomasa-asociaciones/$', 'apppendiente.views.tortuga_tomasa_asociaciones'),
+    url(r'^tortuga-tomasa-objetivo/$', 'apppendiente.views.tortuga_tomasa_objetivo'),
+
     # login / logout
     url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),

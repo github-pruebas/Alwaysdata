@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content={% block descripcion %}{% endblock %} /> 
+    <meta name="keywords" content={% block keywords %}{% endblock %} /> 
+    <title>{% block titulo %}{% endblock %}</title>
+    
+    <link href="http://static.alwaysdata.com/v3/images/favicon.ico" rel="shortcut icon" />
+    <link rel="StyleSheet" media="screen" type="text/css" href="/css/css_ppal.css">
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36404909-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</head>
+
+<!--  #################################################################################################################  -->
+
+<body>
+
+   <header id="cabecera">
+
+      <div id="cabizq">
+        <img src="/static/img/logo_tortuga.jpg" width="120" height="90" alt="Tortuga Tomasa" usemap="#tomasamap">
+        <!-- Map+area para poner zona link en fotos -->
+        <map name="tomasamap">
+          <area shape="rect" coords="50,15,100,50" alt="Tortuga Tomasa" href="http://www.youtube.com/watch?v=s1qopL4hu-s" target="_blank">
+        </map>
+        <p id="texto_cabecera">(Pincha el caparazón)</p>
+      </div>
+
+	    
+	    <div id="cabdere">    
+	      <div id="cabdere_caida">    
+	        <hgroup> 
+	        <h1>Tortuga Tomasa</h1>
+	        <h2>{% block cabecera %}{% endblock %} </h2>
+	        </hgroup>
+	        </div>
+	    </div>
+
+   </header>
+  
+   {% block content %}{% endblock %}
+
+   <footer class="pieseo">
+	 <p class="piebajo">Copyleft ((cc)) Tortuga Tomasa</p>
+   </footer> 
+
+</body>
+
+</html>

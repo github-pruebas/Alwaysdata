@@ -53,3 +53,32 @@ def email_saludo(request):
 def logout_manual(request):
     logout(request)
     return render_to_response('logout_manual.html', context_instance=RequestContext(request))
+
+# Expresiones SEO
+def tortuga_tomasa_letra(request):
+    titulo = "Tortuga Tomasa: letra"
+    descripcion = "Letra canción Tortuga Tomasa"
+    keywords = "Tortuga Tomasa, Letra Tortuga Tomasa, Tortuga Tomasa letra, Letra de la Tortuga Tomasa" 
+    cabecera = "Letra de la canción de la Tortuga Tomasa" 
+    return render_to_response('tortuga-tomasa-letra.html', locals(), context_instance=RequestContext(request))
+    
+def tortuga_tomasa_historia(request):
+    titulo = "Tortuga Tomasa: historia"
+    descripcion = "historia canción Tortuga Tomasa"
+    keywords = "Tortuga Tomasa, historia Tortuga Tomasa, Tortuga Tomasa historia, historia de la Tortuga Tomasa" 
+    cabecera = "Historia de la canción de la Tortuga Tomasa" 
+    return render_to_response('tortuga-tomasa-historia.html', locals(), context_instance=RequestContext(request))
+
+def tortuga_tomasa_asociaciones(request):
+    titulo = "Tortuga Tomasa: asociaciones y grupos"
+    descripcion = "Asociaciones y grupos relacionados con la Tortuga Tomasa"
+    keywords = "Tortuga Tomasa, Asociaciones Tortuga Tomasa, Tortuga Tomasa Grupos" 
+    cabecera = "Asociaciones y grupos relacionados con la Tortuga Tomasa" 
+    return render_to_response('tortuga-tomasa-asociaciones.html', locals(), context_instance=RequestContext(request))
+
+def tortuga_tomasa_objetivo(request):
+    titulo = "Tortuga Tomasa: objetivo de esta web"
+    descripcion = "Objetivo de esta web sobre la Tortuga Tomasa"
+    keywords = "Tortuga Tomasa, Objetivo de esta web Tortuga Tomasa, Tortuga Tomasa objetivo" 
+    cabecera = "Objetivo de esta web" 
+    return render_to_response('tortuga-tomasa-objetivo.html', locals(), context_instance=RequestContext(request))

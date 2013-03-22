@@ -7,7 +7,7 @@
     <title>Tortuga Tomasa</title>
     
     <link href="http://static.alwaysdata.com/v3/images/favicon.ico" rel="shortcut icon" />
-    <link rel="StyleSheet" media="screen" type="text/css" href="./css/css_ppal.css">
+    <link rel="StyleSheet" media="screen" type="text/css" href="/css/css_ppal.css">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
@@ -69,7 +69,6 @@
    .ui-menu { width: 150px; }
    </style>
 
-
     <!-- Acordeón -->
     <script>
     $(function() {
@@ -100,12 +99,14 @@
 
    <header id="cabecera">
 
-    <div id="cabizq"><img style="width:120px; height:90px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></div>
+    <div id="cabizq">
+      <img src="/static/img/logo_tortuga.jpg" width="120" height="90" alt="Tortuga Tomasa">
+    </div>
     
     <div id="cabdere">    
       <div id="cabdere_caida">    
         <hgroup> 
-        <h1> Tortuga Tomasa presenta: </h1>
+        <h1>Tortuga Tomasa</h1>
         <h2>Pruebas hosting <span class="resaltado">Alwaysdata.com</span></h2>
         </hgroup>
         </div>
@@ -113,7 +114,6 @@
 
  </header>
   
-
    <!-- Menú  vertical -->
    <nav id="menuvertical">
      <ul id="menu">
@@ -170,9 +170,7 @@
           // Selección de Base de Datos
           mysql_select_db($database) or die ("error2".mysql_error());
          
-          echo "Tareas pendientes".'<br/>';
-          echo "-------------------------------".'<br/>';
-
+          echo "Tareas pendientes".'<br>'.'<hr>';
           $i = 0;
 
           $Sql ="select tarea, id from apppendiente_pendiente order by prioridad";
@@ -181,7 +179,7 @@
           while($Rs = mysql_fetch_array($result)) 
           {
               $i = $i + 1;
-              echo $i.'.- '.$Rs[0].' <a href="http://asalas.alwaysdata.net/admin/apppendiente/pendiente/'.$Rs[1].'" target="_blank" title="Acceso a esta tarea en el admin">Ver</a>'.'<br/><br/>';
+              echo $i.'.- '.$Rs[0].' <a href="http://asalas.alwaysdata.net/admin/apppendiente/pendiente/'.$Rs[1].'" target="_blank" title="Acceso a esta tarea en el admin">Ver</a>'.'<br><br>';
           }
       ?> 
    </article>
@@ -191,45 +189,40 @@
     <center>
    <div id="accordion" style="text-align: left; float: center; border: 1px solid grey; width: 450px;">
     <h3>Determinación</h3>
-    <center>
-    <div> 
-       <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/ECcc9gPRZKk" frameborder="0"></iframe>
-    </div>
-    </center>
+        <div> 
+           <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/ECcc9gPRZKk" frameborder="0"></iframe>
+        </div>
     <h3>Zorman - Soy rapero</h3>
-    <center>
-    <div> 
-       <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/Jw0CStnoW5I" frameborder="0"></iframe>
-    </div>
-    </center>
+        <div> 
+           <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/Jw0CStnoW5I" frameborder="0"></iframe>
+        </div>
     <h3>Zorman - Pido perdón</h3>
-    <center>
-    <div> 
-       <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/HKVPs1Fh26s" frameborder="0"></iframe>
-    </div>
-    </center>
+        <div> 
+           <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/HKVPs1Fh26s" frameborder="0"></iframe>
+        </div>
     <h3>Sol y texto</h3>
-    <div>
-       <p>
-          <img style="width: 352px; height: 251px;" alt="El sol" src="/static/img/sol.jpg"> <br />
-          Espaaaaaaaaartaco <br />
-          Aparcao!
-       </p>
-    </div>
-
+        <div>
+           <p>
+              <img style="width: 352px; height: 251px;" alt="El sol" src="/static/img/sol.jpg"> <br />
+              Espaaaaaaaaartaco <br />
+              Aparcao!
+           </p>
+        </div>
    </div>
   <br />
   </center>
 
-
   <!-- Rectángulo de posicionamiento -->
   <article class="posicionamiento">
       <h3>Taller de posicionamiento:</h3>
-      <h4>Histórico de "Titles"</h4>
-      <p>El primiero fue <strong>Sandbox en Alwaysdata</strong> con excelentes resultados, y después (19-01-2013) pasó a ser <strong>Tortuga Tomasa</strong>.</p>
-
-        <a href="http://asalas.alwaysdata.net/inicio/hosting-django-gratis.html" target="_blank" title="hosting django gratis">hosting django gratis</a><br>
-        <a href="http://asalas.alwaysdata.net/inicio/caravaning-en-europa.html" target="_blank" title="caravaning en europa">caravaning en europa</a>
+      <h4>Histórico de títulos y expresiones</h4>
+      <p>El primero fue <strong>Sandbox en Alwaysdata</strong> con excelentes resultados. El 19 de enero de 2013 pasó a ser <strong>Tortuga Tomasa</strong>.</p>
+      <p>El 18 de marzo de 2013, las expresiones pasan a estar relacionadas sólo con <strong>Tortuga Tomasa</strong>.</p>
+          <hr>
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-letra" target="_blank" title="Letra tortuga Tomasa">Letra tortuga Tomasa</a><br>
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-historia" target="_blank" title="Historia tortuga Tomasa">Historia tortuga Tomasa</a><br>   
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-asociaciones" target="_blank" title="Asociaciones tortuga Tomasa">Asociaciones tortuga Tomasa</a><br>
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-objetivo" target="_blank" title="Objetivo tortuga Tomasa">Objetivo tortuga Tomasa</a><br>   
   </article> 
 
   <footer id="pie">
@@ -245,11 +238,11 @@
     </div>
     
     <div id="piedere">    
-        <p><span class="fuente_pie">Powered by:</span> <img style="width: 80px; height: 60px;" alt="Tomasa" src="/static/img/logo_tortuga.jpg"></p>
+        <p><span class="fuente_pie">Powered by:</span> <img style="width: 80px; height: 60px;" alt="Tortuga Tomasa" src="/static/img/logo_tortuga.jpg"></p>
     </div>
 
-    <div id="piebajo">
-       Copyright © Tortuga Tomasa 
+    <div class="piebajo">
+       Copyleft ((cc)) Tortuga Tomasa 
     </div>
 
   </footer> 
