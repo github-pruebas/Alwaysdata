@@ -3,49 +3,134 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Formulario HTML5</title>
+
+    <!-- Inicio bloque para drag & drop -->
+    <style type="text/css">
+    #div1 {width:120px;height:90px;padding:10px;border:1px solid #aaaaaa; float: left; margin-left: 50px; margin-right: 10px; margin-bottom: 30px}
+    </style>
+    <script>
+    function allowDrop(ev)
+    {
+    ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+    ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+    <!-- Fin bloque para drag & drop -->
+
+
+    <!-- Inicio bloque geolocalizacion -->
+    <script>
+    function getLocation()
+      {
+        if (navigator.geolocation)
+          {
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+          }
+        else
+          {
+            x.innerHTML="Geolocation is not supported by this browser.";
+          }
+      }
+
+    function showPosition(position)
+      {
+      var latlon=position.coords.latitude+","+position.coords.longitude;
+
+      var img_url="http://maps.googleapis.com/maps/api/staticmap?markers=color:red|"+latlon+"&zoom=14&size=400x300&sensor=false";
+      document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+
+      alert("Tus coordenadas GPS son: "+latlon)
+
+      }
+
+    function showError(error)
+      {
+      switch(error.code) 
+        {
+        case error.PERMISSION_DENIED:
+          x.innerHTML="User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML="Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML="The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML="An unknown error occurred."
+          break;
+        }
+      }
+    </script>
+    <!-- Fin bloque geolocalizacion -->     
+
 </head>
 <body>
 
+  <!-- Drag & drop -->
+  <p>Arrastra a la tortuga a los rectángulos:</p>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br><br><br><br><br>
+  <img id="drag1" src="/static/img/logo_tortuga.jpg" draggable="true" ondragstart="drag(event)" width="120" height="90">
+  <br><br>
+
+  <!-- Geolocalizacion -->
+    <p id="demo">Pulsa al botón para obtener tus coordenadas GPS:</p>
+    <button onclick="getLocation()">Obtén tu geolocalización</button> <br>
+    <div id="mapholder"></div>
+
+  
 	<h4> Formulario con inputs HTML5. El resultado se obtiene con PHP. </h4>
 
 	<form id="form1" name="form1" method="post" action="resul_form.php">
-	    Nombre: <input type="text" name="nombre" value="Tu nombre..." id="nombre" required/> <br />
-	    E-mail: <input type="email" name="email" id="email" required/> <br />
-	       Web: <input type="url" name="web" value="http://www.qdq.com" id="web" required/> <br />
-                <input type="submit" name="enviar" id="enviar" value="Enviar"> 
-        <br /> <br /> <br />
+	    Nombre: <input type="text" name="nombre" value="Tu nombre..." id="nombre" required/> <br>
+	    E-mail: <input type="email" name="email" id="email" required/> <br>
+	       Web: <input type="url" name="web" value="http://www.qdq.com" id="web" required/> <br>
+              <input type="submit" name="enviar" id="enviar" value="Enviar"> 
+        <br> <br> <br>
 
-        Otros inputs HTML5 (MEJOR CON CHROME!!!): <br />
-	  Búsqueda: <input type="search" name="busqueda"><br />
-	  Teclado (sólo para smartphones): <input type="tel" name="telefono"><br />
-	  Fecha (calendario): <input type="date" name="fecha"><br />
-	  Número entre 1 y 15: <input type="number" name="num" min="1" max="15"><br />
-	  Rango entre 0 y 50: <input type="range" name="rango" min="0" max="50"><br />
-	  Color: <input type="color" name="color">
-      <br /> <br /> <br />
+        Otros inputs HTML5 (MEJOR CON CHROME!!!): <br>
+	      Búsqueda: <input type="search" name="busqueda"><br>
+	      Teclado (sólo para smartphones): <input type="tel" name="telefono"><br>
+	      Fecha (calendario): <input type="date" name="fecha"><br>
+	      Número entre 1 y 15: <input type="number" name="num" min="1" max="15"><br>
+	      Rango entre 0 y 50: <input type="range" name="rango" min="0" max="50"><br>
+	      Color: <input type="color" name="color">
+      <br> <br> <br>
 
 
-       <h4>Lo normal es tener el formulario HTML, validarlo con JavaScript (si no lo puede validar el propio HTML5) y luego atacar a la BBDD con PHP y obtener el resultado, 
-           o bien si no hay BBDD de por medio, con PHP o simplemente con HTML. </h4><br />
-       Otros tipos de INPUT: <br />
-        ------------------- <br /> <br /> 
-        <INPUT type="radio" name="mibotondeopcion" checked value="1">Estudiante<br />
-        <INPUT type="radio" name="mibotondeopcion" value="2">Astronauta<br />
-        <INPUT type="radio" name="mibotondeopcion" value="3">Médico<br />
-        <INPUT type="radio" name="mibotondeopcion" value="4">Webmaster<br />
-         ------------------- <br /> <br /> 
+       <h4>Lo normal es tener el formulario HTML, validarlo con JavaScript (si no lo puede validar el propio HTML5) y luego atacar a la BBDD con PHP y obtener el resultado, o bien si no hay BBDD de por medio, con PHP o simplemente con HTML. </h4><br>
+       Otros tipos de INPUT: <br>
+        ------------------- <br> <br> 
+        <INPUT type="radio" name="mibotondeopcion" checked value="1">Estudiante<br>
+        <INPUT type="radio" name="mibotondeopcion" value="2">Astronauta<br>
+        <INPUT type="radio" name="mibotondeopcion" value="3">Médico<br>
+        <INPUT type="radio" name="mibotondeopcion" value="4">Webmaster<br>
+         ------------------- <br> <br> 
    	    <input type="file" name="imagendemilogotipo" accept="image/*.gif ">
-   	    <br /> 
-        ------------------- <br /> <br /> 
+   	    <br> 
+        ------------------- <br> <br> 
         <select name="comidapreferida" size=3>
 		  <option value="tortilla">Las tortillas</option>
 		  <option value="paella">La paella</option>
 		  <option value="pizza">Las pizzas</option>
 		</select> 
-		<br /> <br /> 
-        Campo multilínea:<br /> 
+		<br> <br> 
+        Campo multilínea:<br> 
 		<textarea rows="10" cols="20" wrap="soft">Texto que aparece ya escrito de antemano</textarea> 
-		<br /> <br /> 
+		<br> <br> 
 
 	</form>
 

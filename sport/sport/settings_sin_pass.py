@@ -1,6 +1,6 @@
-import os
+import os, re
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 # Para anadir al PYTHONPATH podemos incluir estas dos lineas:
@@ -18,7 +18,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'asalas_bd',                      # Or path to database file if using sqlite3.
         'USER': 'asalas',                      # Not used with sqlite3.
-        'PASSWORD': '-------',                  # Not used with sqlite3.
+        'PASSWORD': 'xxxxxxxxxxxxxxxxxxxxxxxxx',                  # Not used with sqlite3.
         'HOST': 'mysql2.alwaysdata.com',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -29,7 +29,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'pruebasalwaysdata@gmail.com'
-EMAIL_HOST_PASSWORD = '---------'
+EMAIL_HOST_PASSWORD = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -171,4 +171,10 @@ LOGGING = {
 DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False,
 }
+
+IGNORABLE_404_URLS = (
+    re.compile(r'^/apple-touch-icon.*\.png$'),
+    re.compile(r'^/favicon\.ico$'),
+    re.compile(r'^/robots\.txt$'),
+)
 
