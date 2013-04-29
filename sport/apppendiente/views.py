@@ -57,17 +57,17 @@ def logout_manual(request):
 # Expresiones SEO
 def tortuga_tomasa_letra(request):
     titulo = "Tortuga Tomasa: letra"
-    descripcion = "Letra canción Tortuga Tomasa"
+    descripcion = "Letra canción Tortuga Tomasa, versión más conocida de la famosa canción de la Tortuga Tomasa"
     keywords = "Tortuga Tomasa, Letra Tortuga Tomasa, Tortuga Tomasa letra, Letra de la Tortuga Tomasa" 
     cabecera = "Letra de la canción de la Tortuga Tomasa" 
     return render_to_response('tortuga-tomasa-letra.html', locals(), context_instance=RequestContext(request))
     
-def tortuga_tomasa_historia(request):
-    titulo = "Tortuga Tomasa: historia"
-    descripcion = "historia canción Tortuga Tomasa"
-    keywords = "Tortuga Tomasa, historia Tortuga Tomasa, Tortuga Tomasa historia, historia de la Tortuga Tomasa" 
+def tortuga_tomasa_cancion(request):
+    titulo = "Tortuga Tomasa: historia de la canción"
+    descripcion = "Historia canción Tortuga Tomasa, así como de la intérprete: Teresa Rabal"
+    keywords = "Tortuga Tomasa, cancion Tortuga Tomasa, Tortuga Tomasa historia, historia cancion de la Tortuga Tomasa" 
     cabecera = "Historia de la canción de la Tortuga Tomasa" 
-    return render_to_response('tortuga-tomasa-historia.html', locals(), context_instance=RequestContext(request))
+    return render_to_response('tortuga-tomasa-cancion.html', locals(), context_instance=RequestContext(request))
 
 def tortuga_tomasa_asociaciones(request):
     titulo = "Tortuga Tomasa: asociaciones y grupos"

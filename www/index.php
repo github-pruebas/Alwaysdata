@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Si quieres saber todo sobre la Tortuga Tomasa no puedes perder de vista esta web"> 
     <meta name="keywords" content="tortuga Tomasa, galapago, viaja con su casa" /> 
+    <meta name="msvalidate.01" content="DCC5327434D9CE237AFB29419F2B813A" />    
     <title>Tortuga Tomasa</title>
     
     <link href="http://static.alwaysdata.com/v3/images/favicon.ico" rel="shortcut icon" />
@@ -119,26 +120,33 @@
      <ul id="menu">
     <li><a href="http://asalas.alwaysdata.net/admin" target="_blank" title="Acceso al admin de Django">Admin Django</a></li>
     <li><a href="https://admin.alwaysdata.com/login" target="_blank" title="Acceso al panel de administración de Alwaysdata">Admin Always</a></li>
-    <li><a href="https://github.com" target="_blank" title="Acceso a la página de Github (sin logar)" >Github</a></li>   
-    <li><a href="https://www.google.com/trends" target="_blank" title="Acceso a Google Trends">Google trends</a></li>   
-    <li><a href="form_html5.html" target="_blank" title="Ejemplo de validaciones y tipos para forms en HTML5. Devuelve PHP">HTML5-PHP</a></li>
-    <li><a href="jquery.html" target="_blank" title="Pruebas jQuery">jQuery</a></li>
-    <li><a href="javascript.html" target="_blank" title="Ejemplo javascript">javascript</a></li>            
+    <li class="ui-state-disabled"><a href="#" title="Menú no operativo">Menú privado</a></li>
     <li>
-        <a href="#" title="Estilos">Estilos</a>
+        <a href="#" title="Páginas de estadísticas y Webmasters Tools">Stats & Admin</a>
         <ul>
-            <li><a href="estilos_sin_css.html" target="_blank" title="Sin CSS (pocas apariciones)">Sin CSS</a></li>
-            <li><a href="estilos_con_css.html" target="_blank" title="Con CSS">Con CSS</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="#" title="Páginas de estadísticas disponibles">Estadísticas</a>
-        <ul>
+            <li><a href="https://accounts.google.com/ServiceLogin?service=sitemaps" target="_blank" title="Google WMT">Google WMT</a></li>
+            <li><a href="http://www.bing.com/toolbox/webmaster" target="_blank" title="Bing WMT">Bing WMT</a></li>
             <li><a href="https://www.google.com/analytics/web/?et=&hl=es&authuser=#dashboard/default/a36404909w64481033p66209803/" target="_blank" title="Acceso a Google Analytics">Analytics</a></li>
             <li><a href="http://stats.alwaysdata.com/index.php?module=CoreHome&action=index&idSite=47507&period=day&date=yesterday#module=Dashboard&action=embeddedIndex&idSite=47507&period=day&date=yesterday&idDashboard=1" target="_blank" title="Acceso a estadísticas Piwik" >Piwik</a></li>
         </ul>
     </li>
-    <li class="ui-state-disabled"><a href="#" title="Menú no operativo">Menú privado</a></li>
+    <li>
+        <a href="#" title="Pruebas de código">Pruebas</a>
+        <ul>
+	    <li><a href="form_html5.html" target="_blank" title="Ejemplo de validaciones y tipos para forms en HTML5. Devuelve PHP">HTML5-PHP</a></li>
+	    <li><a href="jquery.html" target="_blank" title="Pruebas jQuery">jQuery</a></li>
+	    <li><a href="javascript.html" target="_blank" title="Ejemplo javascript">javascript</a></li>            
+	    <li>
+		<a href="#" title="Estilos">Estilos</a>
+		<ul>
+		    <li><a href="estilos_sin_css.html" target="_blank" title="Sin CSS (pocas apariciones)">Sin CSS</a></li>
+		    <li><a href="estilos_con_css.html" target="_blank" title="Con CSS">Con CSS</a></li>
+		</ul>
+	    </li>
+        </ul>
+    </li>
+    <li><a href="https://github.com" target="_blank" title="Acceso a la página de Github (sin logar)" >Github</a></li>   
+    <li><a href="https://www.google.com/trends" target="_blank" title="Acceso a Google Trends">Google trends</a></li>   
     <li>
         <a href="#" title="Distintas formas de insertar en BBDD">Altas BBDD</a>
         <ul>
@@ -219,10 +227,10 @@
       <p>El primero fue <strong>Sandbox en Alwaysdata</strong> con excelentes resultados. El 19 de enero de 2013 pasó a ser <strong>Tortuga Tomasa</strong>.</p>
       <p>El 18 de marzo de 2013, las expresiones pasan a estar relacionadas sólo con <strong>Tortuga Tomasa</strong>.</p>
           <hr>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-letra" target="_blank" title="Letra tortuga Tomasa">Letra tortuga Tomasa</a><br>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-historia" target="_blank" title="Historia tortuga Tomasa">Historia tortuga Tomasa</a><br>   
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-asociaciones" target="_blank" title="Asociaciones tortuga Tomasa">Asociaciones tortuga Tomasa</a><br>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-objetivo" target="_blank" title="Objetivo tortuga Tomasa">Objetivo tortuga Tomasa</a><br>   
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-cancion" target="_blank" title="Canción Tortuga Tomasa">Canción Tortuga Tomasa</a><br>   
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-letra" target="_blank" title="Letra Tortuga Tomasa">Letra Tortuga Tomasa</a><br>
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-asociaciones" target="_blank" title="Asociaciones Tortuga Tomasa">Asociaciones Tortuga Tomasa</a><br>
+          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-objetivo" target="_blank" title="Objetivo Tortuga Tomasa">Objetivo Tortuga Tomasa</a><br>   
   </article> 
 
   <footer id="pie">
@@ -246,7 +254,6 @@
     </div>
 
   </footer> 
-
 
 </body>
 
