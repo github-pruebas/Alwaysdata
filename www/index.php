@@ -7,7 +7,7 @@
     <meta name="msvalidate.01" content="DCC5327434D9CE237AFB29419F2B813A" />    
     <title>Tortuga Tomasa</title>
     
-    <link href="http://static.alwaysdata.com/v3/images/favicon.ico" rel="shortcut icon" />
+    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="StyleSheet" media="screen" type="text/css" href="/css/css_ppal.css">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
