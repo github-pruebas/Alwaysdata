@@ -25,7 +25,7 @@ body {background-color:yellow}
 .pieseo p {padding:10px 10px 5px 0px; text-indent:0px; text-align:right; height:90px;}
 
 .fuente_pie {font-weight:bold; color:white;}	  
-.resaltado {font-weight:bold; font-size:22px; color:red;}	  
+.resaltado {font-weight:bold; font-size:12px; color:red;}
 
 .posicionamiento { text-align:left;
 	           background-color:silver ; 
@@ -67,4 +67,19 @@ body {background-color:yellow}
 	           border-width:20px ; 
 	           border-style:double ;} 
 
+#song_in_index {text-align:justify; float:left; 
+				margin-top:20px; 
+				margin-left:10px; 
+				margin-right:10px; 
+				width:50%; 
+				height:50px;}
+
+#accordion{text-align: left; 
+		   margin-top:825px; 
+           float: center; 
+           border: 1px solid grey; 
+           width: 450px;}
+
+
+ 				
  

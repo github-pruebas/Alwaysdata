@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Ejemplos JS</title>
 
-<script type="text/javascript">
+<script>
 ////////////////////////////////////////////////////////////////////
 // SCRIPT PARA EL EJEMPLO 1 "CUENTA ELEMENTOS EN UN CONTENIDO"
 ////////////////////////////////////////////////////////////////////
@@ -47,6 +47,7 @@
 function myFunction2()
 {
 x=document.getElementById("demo") // Find the element
+x.innerHTML="Este es el texto tras cambiar el estilo.";
 x.style.color="#ff0000";          // Change the style
 }
 </script>
@@ -74,7 +75,7 @@ if(x==""||isNaN(x))
 </head>
 <body>
 
- <h1> Ver otros ejemplos en mi Dropbox </h1>
+ <h1> XXX Otros ejemplos en mi Dropbox XXX </h1>
 
  <hr>
 
@@ -83,6 +84,7 @@ if(x==""||isNaN(x))
   -->
 
  <br>
+ <h3> Ejemplo 1 </h3>
  <button type="button" onclick="function_calcula()">Pulsa!</button>
  <br><br><br>
 
@@ -116,6 +118,7 @@ odio. <a href="http://prueba5">Sed non lectus non est pellentesque</a> auctor.</
  <!--   
     EJEMPLO 2  "CAMBIANDO ESTILO" 
   -->
+<h3> Ejemplo 2 </h3>  
 <p id="demo">
 Este es el texto original antes de cambiar el estilo.
 </p>
@@ -127,9 +130,11 @@ Este es el texto original antes de cambiar el estilo.
 <!--   
    EJEMPLO 3  "VALIDANDO" 
  -->
+<h3> Ejemplo 3 </h3>
 <p> Pulse para ver si el valor es o no un number </p>
 <input id="demo3" type="text">
 <button type="button" onclick="myFunction3()">Click Me!</button>
+
 
 <hr>
 

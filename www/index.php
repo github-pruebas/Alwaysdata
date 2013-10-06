@@ -9,8 +9,8 @@
     
     <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="StyleSheet" media="screen" type="text/css" href="/css/css_ppal.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
@@ -92,11 +92,44 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
+
+    <!-- Pestañas -->
+    <script>
+        $(function() {
+          $( "#tabs" ).tabs();
+        });
+    </script>
+
+
+
+
+
+<!--  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  -->
+ 
+
+<!--  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  -->
+
+
+
+
+
+
 </head>
 
 <!--  #################################################################################################################  -->
 
 <body>
+
+
+
+<!--  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  -->
+
+
+
+
+<!--  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  -->
+
+
 
    <header id="cabecera">
 
@@ -108,12 +141,16 @@
       <div id="cabdere_caida">    
         <hgroup> 
         <h1>Tortuga Tomasa</h1>
-        <h2>Pruebas hosting <span class="resaltado">Alwaysdata.com</span></h2>
+        <h6>(Pruebas hosting <span class="resaltado">Alwaysdata.com</span>)</h6>
         </hgroup>
         </div>
     </div>
 
  </header>
+
+
+
+
   
    <!-- Menú  vertical -->
    <nav id="menuvertical">
@@ -156,6 +193,7 @@
         </ul>
     </li>
     <li><a href="http://asalas.alwaysdata.net/email_saludo" target="_blank" title="Envío de email mediante formulario Django">Email saludo</a></li>
+    <li><a href="http://antosalas.wix.com/tortuga-tomasa" target="_blank" title="Pruebas Wix">Wix</a></li>
     <li>
         <a href="#" title="Opciones para logout">logout</a>
         <ul>
@@ -166,6 +204,52 @@
    </ul>
    </nav> 
 
+
+   <article id="song_in_index">
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br><br>
+                    Todas las mañanas la tenemos que esperar, <br>
+                    Que se pinte las pestañas con carbón del encinar <br>
+                    que se limpie las patitas con jazmín y flor de azahar <br>
+                    que se mire y se remire en el espejo por demás. <br><br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br><br>
+                    Todas las mañanas la tenemos que esperar, <br>
+                    que repase los deberes con su pluma de faisán <br>
+                    una hora de gimnasia con su footing matinal <br>
+                    desayune cinco almendras con un zumo de nogal. <br><br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br><br>
+                    Y una moraleja le tenemos que aguantar <br>
+                    cuando hay prisa andar despacio, nos repite sin cesar <br>
+                    caminando lentamente a la meta arribarás <br>
+                    es mejor llegar más tarde que quizás nunca llegar. <br><br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br>
+                    La Tortuga Tomasa viaja con su casa <br>
+                    y aunque se retrasa, siempre llegará. <br><br>
+
+          <hr>
+
+          <table width="100%">
+          <tr>
+             <td><a href="http://asalas.alwaysdata.net/tortuga-tomasa-cancion" target="_blank" title="Canción Tortuga Tomasa">Canción Tortuga Tomasa</a></td>
+             <td><a href="http://asalas.alwaysdata.net/tortuga-tomasa-letra" target="_blank" title="Letra Tortuga Tomasa">Letra Tortuga Tomasa</a></td>
+          </tr>
+          <tr>
+             <td><a href="http://asalas.alwaysdata.net/tortuga-tomasa-asociaciones" target="_blank" title="Asociaciones Tortuga Tomasa">Asociaciones Tortuga Tomasa</a></td>
+             <td><a href="http://asalas.alwaysdata.net/tortuga-tomasa-objetivo" target="_blank" title="Objetivo Tortuga Tomasa">Objetivo Tortuga Tomasa</a> </td>
+          </tr>
+          </table>
+
+   </article>
+ 
    <!-- Tareas pendientes, columna derecha -->
    <article id="tareas">
       <?php
@@ -192,13 +276,12 @@
       ?> 
    </article>
 
-
     <!-- Acordeón -->
     <center>
-   <div id="accordion" style="text-align: left; float: center; border: 1px solid grey; width: 450px;">
-    <h3>Determinación</h3>
+   <div id="accordion">
+    <h3>Tortuga Tomasa by Teresa Rabal</h3>
         <div> 
-           <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/ECcc9gPRZKk" frameborder="0"></iframe>
+           <iframe class="youtube-player" type="text/html" width="380" height="250" src="http://www.youtube.com/embed/s1qopL4hu-s" frameborder="0"></iframe>
         </div>
     <h3>Zorman - Soy rapero</h3>
         <div> 
@@ -217,22 +300,38 @@
            </p>
         </div>
    </div>
-  <br />
+  <br>
   </center>
 
-  <!-- Rectángulo de posicionamiento -->
-  <article class="posicionamiento">
-      <h3>Taller de posicionamiento:</h3>
-      <h4>Histórico de títulos y expresiones</h4>
-      <p>El primero fue <strong>Sandbox en Alwaysdata</strong> con excelentes resultados. El 19 de enero de 2013 pasó a ser <strong>Tortuga Tomasa</strong>.</p>
-      <p>El 18 de marzo de 2013, las expresiones pasan a estar relacionadas sólo con <strong>Tortuga Tomasa</strong>.</p>
-          <hr>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-cancion" target="_blank" title="Canción Tortuga Tomasa">Canción Tortuga Tomasa</a><br>   
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-letra" target="_blank" title="Letra Tortuga Tomasa">Letra Tortuga Tomasa</a><br>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-asociaciones" target="_blank" title="Asociaciones Tortuga Tomasa">Asociaciones Tortuga Tomasa</a><br>
-          <a href="http://asalas.alwaysdata.net/tortuga-tomasa-objetivo" target="_blank" title="Objetivo Tortuga Tomasa">Objetivo Tortuga Tomasa</a><br>   
-  </article> 
 
+
+
+  <div id="tabs">
+  <ul>
+  <li><a href="#tabs-1">Acordeón de vídeos</a></li>
+  <li><a href="#tabs-2">Secuencia de fotos</a></li>
+  <li><a href="#tabs-3">Taller de posicionamiento</a></li>
+  </ul>
+  <div id="tabs-1">
+        <p>Acordeón aquí.</p>
+  </div>
+  <div id="tabs-2">
+        <p>Por construir.</p>
+  </div>
+  <div id="tabs-3">
+
+    <!-- Rectángulo de posicionamiento -->
+    <article class="posicionamiento">
+        <h4>Histórico de títulos y expresiones</h4>
+        <p>El primero fue <strong>Sandbox en Alwaysdata</strong> con excelentes resultados. El 19 de enero de 2013 pasó a ser <strong>Tortuga Tomasa</strong>.</p>
+        <p>El 18 de marzo de 2013, las expresiones pasan a estar relacionadas sólo con <strong>Tortuga Tomasa</strong>.</p>
+    </article> 
+
+  </div>
+  </div>
+
+ <br>
+  
   <footer id="pie">
     
     <div id="pieizq">
@@ -244,7 +343,8 @@
             <!-- End of Domino Counter Code -->
         </div>
     </div>
-    
+
+   
     <div id="piedere">    
         <p><span class="fuente_pie">Powered by:</span> <img style="width: 80px; height: 60px;" alt="Tortuga Tomasa" src="/static/img/logo_tortuga.jpg"></p>
     </div>
