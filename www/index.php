@@ -100,36 +100,11 @@
         });
     </script>
 
-
-
-
-
-<!--  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  -->
- 
-
-<!--  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  -->
-
-
-
-
-
-
 </head>
 
 <!--  #################################################################################################################  -->
 
 <body>
-
-
-
-<!--  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  -->
-
-
-
-
-<!--  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  -->
-
-
 
    <header id="cabecera">
 
@@ -149,19 +124,17 @@
  </header>
 
 
-
-
-  
    <!-- Menú  vertical -->
    <nav id="menuvertical">
      <ul id="menu">
     <li><a href="http://asalas.alwaysdata.net/admin" target="_blank" title="Acceso al admin de Django">Admin Django</a></li>
     <li><a href="https://admin.alwaysdata.com/login" target="_blank" title="Acceso al panel de administración de Alwaysdata">Admin Always</a></li>
+    <li><a href="carrusel.html" target="_blank" title="Carrusel">Carrusel</a></li>
     <li class="ui-state-disabled"><a href="#" title="Menú no operativo">Menú privado</a></li>
     <li>
         <a href="#" title="Páginas de estadísticas y Webmasters Tools">Stats & Admin</a>
         <ul>
-            <li><a href="https://accounts.google.com/ServiceLogin?service=sitemaps" target="_blank" title="Google WMT">Google WMT</a></li>
+            <li><a href="https://www.google.com/webmasters/tools" target="_blank" title="Google WMT">Google WMT</a></li>
             <li><a href="http://www.bing.com/toolbox/webmaster" target="_blank" title="Bing WMT">Bing WMT</a></li>
             <li><a href="https://www.google.com/analytics/web/?et=&hl=es&authuser=#dashboard/default/a36404909w64481033p66209803/" target="_blank" title="Acceso a Google Analytics">Analytics</a></li>
             <li><a href="http://stats.alwaysdata.com/index.php?module=CoreHome&action=index&idSite=47507&period=day&date=yesterday#module=Dashboard&action=embeddedIndex&idSite=47507&period=day&date=yesterday&idDashboard=1" target="_blank" title="Acceso a estadísticas Piwik" >Piwik</a></li>
@@ -304,8 +277,6 @@
   </center>
 
 
-
-
   <div id="tabs">
   <ul>
   <li><a href="#tabs-1">Acordeón de vídeos</a></li>
@@ -313,7 +284,7 @@
   <li><a href="#tabs-3">Taller de posicionamiento</a></li>
   </ul>
   <div id="tabs-1">
-        <p>Acordeón aquí.</p>
+     <p>Aquí acordeón.</p>
   </div>
   <div id="tabs-2">
         <p>Por construir.</p>
@@ -354,6 +325,7 @@
     </div>
 
   </footer> 
+
 
 </body>
 
