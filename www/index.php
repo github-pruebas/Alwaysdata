@@ -167,6 +167,7 @@
     </li>
     <li><a href="http://asalas.alwaysdata.net/email_saludo" target="_blank" title="Envío de email mediante formulario Django">Email saludo</a></li>
     <li><a href="http://antosalas.wix.com/tortuga-tomasa" target="_blank" title="Pruebas Wix">Wix</a></li>
+    <li><a href="doc/tomasa_general.html" target="_blank" title="Doc Sphinx">Doc Sphinx</a></li>
     <li>
         <a href="#" title="Opciones para logout">logout</a>
         <ul>
