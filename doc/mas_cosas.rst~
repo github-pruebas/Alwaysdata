@@ -1,0 +1,98 @@
+Tortuga Tomasa en Alwaysdata
+============================
+El objetivo de este mini proyecto es probar el servicio gratuito de hosting con Django proporcionado por la empresa francesa Alwaysdata.
+
+Pruebas realizadas
+------------------
+Dado que Alwaysdata sólo ofrece 10Mb para su hosting gratuito, se pueden hacer pocas pruebas simultáneamente.
+
+Estos han sido algunos de los lenguajes probados:
+
+ * Django
+ * HTML 5
+ * PHP
+ * JavaScript
+ * jQuery
+
+Y estas son algunas de las funcionalidades:
+
+ #. Tastypie (REST API)
+ #. Envíos de correo
+ #. Estadísticas (Analytics, Piwik, etc)
+ #. Distintos tipos de alta en BBDD
+ #. Pruebas de posicionamiento SEO para los distintos buscadores
+ #. etc
+
+Probando Sphinx
+===============
+Rellenando
+----------
+Aquí voy a meter algo de **relleno** para ver cómo queda la página:
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+
+Inline marcado
+--------------
+Las palabras pueden tener *énfasis en cursiva* o ser **negrita** y se puede definir
+ejemplos de código con citas, como cuando se habla de un comando: ``sudo`` otorga poderes de superusuario
+
+Links: 
+ * Indicando el ref: `Inicio de Tortuga Tomasa <http://asalas.alwaysdata.net>`_
+ * Poniendo directamente la URL: http://asalas.alwaysdata.net
+
+Algunos ejemplos
+----------------
+Ejemplos de tablas
+^^^^^^^^^^^^^^^^^^
+Tipo 1:
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+=====  =====  ======
+
+Tipo 2:
+
++------------+------------+-----------+
+| Header 1   | Header 2   | Header 3  |
++============+============+===========+
+| body row 1 | column 2   | column 3  |
++------------+------------+-----------+
+| body row 2 | content of both 2 & 3  |
++------------+------------+-----------+
+
+Ejemplo de bloque de código
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
+
+    import math
+    print 'import done'
+
+O bien:
+
+.. code-block:: html
+    :linenos:
+
+    <h1>code block example</h1>
+    <h2>lolailo</h2>
+
+Referencias
+-----------
+Para generar esta documentación, seguí los pasos de:
+ * https://www.ibm.com/developerworks/ssa/opensource/library/os-sphinx-documentation/
+ * http://www.ittc.ku.edu/kusp/new/howto/sphinx/reference.html
+ * http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+Y, por supuesto:
+ * http://sphinx-doc.org/contents.html
+
+
+.. currentmodule:: view
+.. autofunction:: home_page
+
+
+
+
