@@ -40,6 +40,21 @@ Links:
  * Indicando el ref: `Inicio de Tortuga Tomasa <http://asalas.alwaysdata.net>`_
  * Poniendo directamente la URL: http://asalas.alwaysdata.net
 
+Avisos
+------
+
+.. note::
+
+Esto es una nota
+
+.. warning::
+
+Esto es un aviso
+
+.. seealso::
+
+Esto es un **seealso**
+
 Algunos ejemplos
 ----------------
 Ejemplos de tablas
@@ -83,15 +98,13 @@ O bien:
 Referencias
 -----------
 Para generar esta documentación, seguí los pasos de:
+ * https://pythonhosted.org/an_example_pypi_project/sphinx.html#full-code-example
  * https://www.ibm.com/developerworks/ssa/opensource/library/os-sphinx-documentation/
  * http://www.ittc.ku.edu/kusp/new/howto/sphinx/reference.html
  * http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 Y, por supuesto:
  * http://sphinx-doc.org/contents.html
 
-
-.. currentmodule:: views
-.. autofunction:: home_page
 
 
 

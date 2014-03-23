@@ -1,5 +1,13 @@
 Funciones en source
 ===================
+
+.. currentmodule:: sport.appsport.views
+.. autofunction:: home_page
+
+.. module:: home_page
+    :platform: n/a
+    :synopsis: redirects to "inicio"
+
 .. module:: aaa
 
 Esto habla de aaa

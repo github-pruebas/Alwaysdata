@@ -83,6 +83,7 @@ O bien:
 Referencias
 -----------
 Para generar esta documentación, seguí los pasos de:
+ * https://pythonhosted.org/an_example_pypi_project/sphinx.html#full-code-example
  * https://www.ibm.com/developerworks/ssa/opensource/library/os-sphinx-documentation/
  * http://www.ittc.ku.edu/kusp/new/howto/sphinx/reference.html
  * http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
