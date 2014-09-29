@@ -106,7 +106,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     #'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'sport.urls'
@@ -134,7 +134,7 @@ INSTALLED_APPS = (
     'appsport',
     'apppendiente',
     'tastypie',
-    'debug_toolbar',
+    # 'debug_toolbar',
 )
 
 INTERNAL_IPS = ('127.0.0.1','85.118.242.195','89.131.4.84')

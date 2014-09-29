@@ -8,6 +8,7 @@ admin.autodiscover()
 
 v1_api = Api(api_name='v1')
 v1_api.register(PendienteResource())
+v1_api.register(MaximaPrioridadResource())
 
 urlpatterns = patterns('',
 
