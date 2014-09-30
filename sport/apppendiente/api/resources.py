@@ -7,4 +7,3 @@ class PendienteResource(ModelResource):
         queryset = Pendiente.objects.all()
         allowed_methods = ['get','post']
         authorization = Authorization()
-        
